@@ -1,0 +1,2 @@
+[console_scripts]
+pallet_service = pallet_node.pallet_service:main

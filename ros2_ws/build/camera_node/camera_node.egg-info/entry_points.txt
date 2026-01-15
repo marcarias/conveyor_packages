@@ -1,0 +1,2 @@
+[console_scripts]
+camera_service = camera_node.camera_service:main

@@ -1,0 +1,10 @@
+uint32[] box_ids
+float32[] widths
+float32[] heights
+float32[] depths
+---
+string strategy
+string[] layer_descriptions
+uint32 total_layers
+float32 pallet_fill_percentage
+bool success

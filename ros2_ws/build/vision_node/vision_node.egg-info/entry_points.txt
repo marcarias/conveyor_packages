@@ -1,0 +1,2 @@
+[console_scripts]
+vision_service = vision_node.vision_client:main

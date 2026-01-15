@@ -1,0 +1,383 @@
+[0.503s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.503s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73272af676b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73272af06b10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73272af06b10>>)
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.650s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/marc/conveyor_packages'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extensions ['ignore', 'ignore_ament_install']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extension 'ignore'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extension 'ignore_ament_install'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extensions ['colcon_pkg']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extension 'colcon_pkg'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extensions ['colcon_meta']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extension 'colcon_meta'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extensions ['ros']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/camera_node) by extension 'ros'
+[0.737s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/camera_node' with type 'ros.ament_python' and name 'camera_node'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extensions ['ignore', 'ignore_ament_install']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extension 'ignore'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extension 'ignore_ament_install'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extensions ['colcon_pkg']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extension 'colcon_pkg'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extensions ['colcon_meta']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extension 'colcon_meta'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extensions ['ros']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller_node) by extension 'ros'
+[0.740s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/controller_node' with type 'ros.ament_python' and name 'controller_node'
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extensions ['ignore', 'ignore_ament_install']
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extension 'ignore'
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extension 'ignore_ament_install'
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extensions ['colcon_pkg']
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extension 'colcon_pkg'
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extensions ['colcon_meta']
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extension 'colcon_meta'
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extensions ['ros']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/pallet_node) by extension 'ros'
+[0.743s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/pallet_node' with type 'ros.ament_python' and name 'pallet_node'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extension 'ignore'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extension 'ignore_ament_install'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extensions ['colcon_pkg']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extension 'colcon_pkg'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extensions ['colcon_meta']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extension 'colcon_meta'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extensions ['ros']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_interfaces) by extension 'ros'
+[0.746s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/vision_interfaces' with type 'ros.ament_cmake' and name 'vision_interfaces'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extension 'ignore_ament_install'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extensions ['colcon_pkg']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extension 'colcon_pkg'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extensions ['colcon_meta']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extension 'colcon_meta'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extensions ['ros']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision_node) by extension 'ros'
+[0.749s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/vision_node' with type 'ros.ament_python' and name 'vision_node'
+[0.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.800s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'vision_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.847s] DEBUG:colcon.colcon_core.verb:Building package 'vision_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/marc/conveyor_packages/build/vision_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/marc/conveyor_packages/install/vision_interfaces', 'merge_install': False, 'path': '/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'camera_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'camera_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/marc/conveyor_packages/build/camera_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/marc/conveyor_packages/install/camera_node', 'merge_install': False, 'path': '/home/marc/conveyor_packages/ros2_ws/src/camera_node', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'controller_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'controller_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/marc/conveyor_packages/build/controller_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/marc/conveyor_packages/install/controller_node', 'merge_install': False, 'path': '/home/marc/conveyor_packages/ros2_ws/src/controller_node', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'pallet_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'pallet_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/marc/conveyor_packages/build/pallet_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/marc/conveyor_packages/install/pallet_node', 'merge_install': False, 'path': '/home/marc/conveyor_packages/ros2_ws/src/pallet_node', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'vision_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'vision_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/marc/conveyor_packages/build/vision_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/marc/conveyor_packages/install/vision_node', 'merge_install': False, 'path': '/home/marc/conveyor_packages/ros2_ws/src/vision_node', 'symlink_install': False, 'test_result_base': None}
+[0.849s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.850s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.850s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces' with build type 'ament_cmake'
+[0.850s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces'
+[0.860s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.860s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.860s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/build/vision_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/marc/conveyor_packages/ros2_ws/src/vision_interfaces -DCMAKE_INSTALL_PREFIX=/home/marc/conveyor_packages/install/vision_interfaces
+[8.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/build/vision_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/marc/conveyor_packages/ros2_ws/src/vision_interfaces -DCMAKE_INSTALL_PREFIX=/home/marc/conveyor_packages/install/vision_interfaces
+[8.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/build/vision_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/marc/conveyor_packages/build/vision_interfaces -- -j20 -l20
+[13.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/build/vision_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/marc/conveyor_packages/build/vision_interfaces -- -j20 -l20
+[13.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/build/vision_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/marc/conveyor_packages/build/vision_interfaces
+[13.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_interfaces)
+[13.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/build/vision_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/marc/conveyor_packages/build/vision_interfaces
+[13.729s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces' for CMake module files
+[13.730s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces' for CMake config files
+[13.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interfaces', 'cmake_prefix_path')
+[13.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/cmake_prefix_path.ps1'
+[13.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/cmake_prefix_path.dsv'
+[13.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/cmake_prefix_path.sh'
+[13.737s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/lib'
+[13.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interfaces', 'ld_library_path_lib')
+[13.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/ld_library_path_lib.ps1'
+[13.738s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/ld_library_path_lib.dsv'
+[13.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/ld_library_path_lib.sh'
+[13.739s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/bin'
+[13.739s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/lib/pkgconfig/vision_interfaces.pc'
+[13.739s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages'
+[13.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interfaces', 'pythonpath')
+[13.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/pythonpath.ps1'
+[13.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/pythonpath.dsv'
+[13.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/pythonpath.sh'
+[13.741s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/bin'
+[13.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.ps1'
+[13.743s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.dsv'
+[13.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.sh'
+[13.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.bash'
+[13.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.zsh'
+[13.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marc/conveyor_packages/install/vision_interfaces/share/colcon-core/packages/vision_interfaces)
+[13.748s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_interfaces)
+[13.749s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces' for CMake module files
+[13.749s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces' for CMake config files
+[13.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interfaces', 'cmake_prefix_path')
+[13.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/cmake_prefix_path.ps1'
+[13.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/cmake_prefix_path.dsv'
+[13.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/cmake_prefix_path.sh'
+[13.752s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/lib'
+[13.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interfaces', 'ld_library_path_lib')
+[13.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/ld_library_path_lib.ps1'
+[13.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/ld_library_path_lib.dsv'
+[13.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/ld_library_path_lib.sh'
+[13.754s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/bin'
+[13.754s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/lib/pkgconfig/vision_interfaces.pc'
+[13.754s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages'
+[13.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interfaces', 'pythonpath')
+[13.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/pythonpath.ps1'
+[13.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/pythonpath.dsv'
+[13.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/hook/pythonpath.sh'
+[13.757s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_interfaces/bin'
+[13.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.ps1'
+[13.757s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.dsv'
+[13.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.sh'
+[13.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.bash'
+[13.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.zsh'
+[13.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marc/conveyor_packages/install/vision_interfaces/share/colcon-core/packages/vision_interfaces)
+[13.760s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/marc/conveyor_packages/ros2_ws/src/camera_node' with build type 'ament_python'
+[13.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_node', 'ament_prefix_path')
+[13.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/camera_node/share/camera_node/hook/ament_prefix_path.ps1'
+[13.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/camera_node/share/camera_node/hook/ament_prefix_path.dsv'
+[13.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/camera_node/share/camera_node/hook/ament_prefix_path.sh'
+[13.762s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.762s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.765s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/marc/conveyor_packages/ros2_ws/src/controller_node' with build type 'ament_python'
+[13.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_node', 'ament_prefix_path')
+[13.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/controller_node/share/controller_node/hook/ament_prefix_path.ps1'
+[13.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/controller_node/share/controller_node/hook/ament_prefix_path.dsv'
+[13.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/controller_node/share/controller_node/hook/ament_prefix_path.sh'
+[13.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.773s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/marc/conveyor_packages/ros2_ws/src/pallet_node' with build type 'ament_python'
+[13.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('pallet_node', 'ament_prefix_path')
+[13.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/hook/ament_prefix_path.ps1'
+[13.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/hook/ament_prefix_path.dsv'
+[13.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/hook/ament_prefix_path.sh'
+[13.781s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.781s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.787s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/marc/conveyor_packages/ros2_ws/src/vision_node' with build type 'ament_python'
+[13.788s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_node', 'ament_prefix_path')
+[13.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_node/share/vision_node/hook/ament_prefix_path.ps1'
+[13.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_node/share/vision_node/hook/ament_prefix_path.dsv'
+[13.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_node/share/vision_node/hook/ament_prefix_path.sh'
+[13.795s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.175s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/marc/conveyor_packages/ros2_ws/src/controller_node'
+[14.175s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.175s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.426s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/marc/conveyor_packages/ros2_ws/src/camera_node'
+[14.427s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.427s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.679s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/marc/conveyor_packages/ros2_ws/src/pallet_node'
+[14.680s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.680s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.907s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/marc/conveyor_packages/ros2_ws/src/vision_node'
+[14.907s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.907s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/camera_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/camera_node build --build-base /home/marc/conveyor_packages/build/camera_node/build install --record /home/marc/conveyor_packages/build/camera_node/install.log --single-version-externally-managed install_data
+[16.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/vision_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/vision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/vision_node build --build-base /home/marc/conveyor_packages/build/vision_node/build install --record /home/marc/conveyor_packages/build/vision_node/install.log --single-version-externally-managed install_data
+[16.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/pallet_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/pallet_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/pallet_node build --build-base /home/marc/conveyor_packages/build/pallet_node/build install --record /home/marc/conveyor_packages/build/pallet_node/install.log --single-version-externally-managed install_data
+[16.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/controller_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/controller_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/controller_node build --build-base /home/marc/conveyor_packages/build/controller_node/build install --record /home/marc/conveyor_packages/build/controller_node/install.log --single-version-externally-managed install_data
+[16.820s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node' for CMake module files
+[16.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/vision_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/vision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/vision_node build --build-base /home/marc/conveyor_packages/build/vision_node/build install --record /home/marc/conveyor_packages/build/vision_node/install.log --single-version-externally-managed install_data
+[16.822s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node' for CMake config files
+[16.823s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node/lib'
+[16.823s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node/bin'
+[16.823s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node/lib/pkgconfig/vision_node.pc'
+[16.823s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages'
+[16.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_node', 'pythonpath')
+[16.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_node/share/vision_node/hook/pythonpath.ps1'
+[16.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/vision_node/share/vision_node/hook/pythonpath.dsv'
+[16.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/vision_node/share/vision_node/hook/pythonpath.sh'
+[16.825s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/vision_node/bin'
+[16.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_node)
+[16.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_node/share/vision_node/package.ps1'
+[16.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marc/conveyor_packages/install/vision_node/share/vision_node/package.dsv'
+[16.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_node/share/vision_node/package.sh'
+[16.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_node/share/vision_node/package.bash'
+[16.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/vision_node/share/vision_node/package.zsh'
+[16.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marc/conveyor_packages/install/vision_node/share/colcon-core/packages/vision_node)
+[16.829s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node' for CMake module files
+[16.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/camera_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/camera_node build --build-base /home/marc/conveyor_packages/build/camera_node/build install --record /home/marc/conveyor_packages/build/camera_node/install.log --single-version-externally-managed install_data
+[16.831s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node' for CMake config files
+[16.832s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node/lib'
+[16.832s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node/bin'
+[16.832s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node/lib/pkgconfig/camera_node.pc'
+[16.832s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages'
+[16.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_node', 'pythonpath')
+[16.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/camera_node/share/camera_node/hook/pythonpath.ps1'
+[16.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/camera_node/share/camera_node/hook/pythonpath.dsv'
+[16.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/camera_node/share/camera_node/hook/pythonpath.sh'
+[16.833s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/camera_node/bin'
+[16.834s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_node)
+[16.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/camera_node/share/camera_node/package.ps1'
+[16.834s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marc/conveyor_packages/install/camera_node/share/camera_node/package.dsv'
+[16.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/camera_node/share/camera_node/package.sh'
+[16.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/camera_node/share/camera_node/package.bash'
+[16.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/camera_node/share/camera_node/package.zsh'
+[16.835s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marc/conveyor_packages/install/camera_node/share/colcon-core/packages/camera_node)
+[16.839s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node' for CMake module files
+[16.840s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node' for CMake config files
+[16.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/controller_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/controller_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/controller_node build --build-base /home/marc/conveyor_packages/build/controller_node/build install --record /home/marc/conveyor_packages/build/controller_node/install.log --single-version-externally-managed install_data
+[16.841s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node/lib'
+[16.841s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node/bin'
+[16.841s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node/lib/pkgconfig/controller_node.pc'
+[16.842s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages'
+[16.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_node', 'pythonpath')
+[16.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/controller_node/share/controller_node/hook/pythonpath.ps1'
+[16.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/controller_node/share/controller_node/hook/pythonpath.dsv'
+[16.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/controller_node/share/controller_node/hook/pythonpath.sh'
+[16.844s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/controller_node/bin'
+[16.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_node)
+[16.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/controller_node/share/controller_node/package.ps1'
+[16.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marc/conveyor_packages/install/controller_node/share/controller_node/package.dsv'
+[16.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/controller_node/share/controller_node/package.sh'
+[16.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/controller_node/share/controller_node/package.bash'
+[16.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/controller_node/share/controller_node/package.zsh'
+[16.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marc/conveyor_packages/install/controller_node/share/colcon-core/packages/controller_node)
+[16.850s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node' for CMake module files
+[16.852s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node' for CMake config files
+[16.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/pallet_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/build/pallet_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/pallet_node build --build-base /home/marc/conveyor_packages/build/pallet_node/build install --record /home/marc/conveyor_packages/build/pallet_node/install.log --single-version-externally-managed install_data
+[16.854s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node/lib'
+[16.854s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node/bin'
+[16.854s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node/lib/pkgconfig/pallet_node.pc'
+[16.855s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages'
+[16.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('pallet_node', 'pythonpath')
+[16.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/hook/pythonpath.ps1'
+[16.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/hook/pythonpath.dsv'
+[16.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/hook/pythonpath.sh'
+[16.857s] Level 1:colcon.colcon_core.environment:checking '/home/marc/conveyor_packages/install/pallet_node/bin'
+[16.857s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pallet_node)
+[16.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/package.ps1'
+[16.858s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/package.dsv'
+[16.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/package.sh'
+[16.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/package.bash'
+[16.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/marc/conveyor_packages/install/pallet_node/share/pallet_node/package.zsh'
+[16.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/marc/conveyor_packages/install/pallet_node/share/colcon-core/packages/pallet_node)
+[16.864s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.865s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.865s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.865s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[16.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.967s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.973s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[16.973s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.974s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marc/conveyor_packages/install/local_setup.ps1'
+[16.976s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/marc/conveyor_packages/install/_local_setup_util_ps1.py'
+[16.978s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marc/conveyor_packages/install/setup.ps1'
+[16.981s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marc/conveyor_packages/install/local_setup.sh'
+[16.983s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/marc/conveyor_packages/install/_local_setup_util_sh.py'
+[16.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marc/conveyor_packages/install/setup.sh'
+[16.988s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marc/conveyor_packages/install/local_setup.bash'
+[16.990s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marc/conveyor_packages/install/setup.bash'
+[16.992s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/marc/conveyor_packages/install/local_setup.zsh'
+[16.994s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/marc/conveyor_packages/install/setup.zsh'

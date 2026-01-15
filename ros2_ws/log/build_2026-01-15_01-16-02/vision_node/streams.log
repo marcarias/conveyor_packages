@@ -1,0 +1,37 @@
+[2.068s] Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/vision_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/vision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/vision_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/vision_node/install.log --single-version-externally-managed install_data
+[2.524s] running egg_info
+[2.525s] creating ../../build/vision_node/vision_node.egg-info
+[2.557s] writing ../../build/vision_node/vision_node.egg-info/PKG-INFO
+[2.558s] writing dependency_links to ../../build/vision_node/vision_node.egg-info/dependency_links.txt
+[2.559s] writing entry points to ../../build/vision_node/vision_node.egg-info/entry_points.txt
+[2.561s] writing requirements to ../../build/vision_node/vision_node.egg-info/requires.txt
+[2.561s] writing top-level names to ../../build/vision_node/vision_node.egg-info/top_level.txt
+[2.561s] writing manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'
+[2.616s] reading manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'
+[2.617s] writing manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'
+[2.617s] running build
+[2.618s] running build_py
+[2.618s] creating /home/marc/conveyor_packages/ros2_ws/build/vision_node/build
+[2.618s] creating /home/marc/conveyor_packages/ros2_ws/build/vision_node/build/lib
+[2.619s] creating /home/marc/conveyor_packages/ros2_ws/build/vision_node/build/lib/vision_node
+[2.619s] copying vision_node/vision_client.py -> /home/marc/conveyor_packages/ros2_ws/build/vision_node/build/lib/vision_node
+[2.619s] copying vision_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/build/vision_node/build/lib/vision_node
+[2.620s] running install
+[2.631s] running install_lib
+[2.666s] creating /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages/vision_node
+[2.667s] copying /home/marc/conveyor_packages/ros2_ws/build/vision_node/build/lib/vision_node/vision_client.py -> /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages/vision_node
+[2.668s] copying /home/marc/conveyor_packages/ros2_ws/build/vision_node/build/lib/vision_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages/vision_node
+[2.668s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages/vision_node/vision_client.py to vision_client.cpython-312.pyc
+[2.675s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages/vision_node/__init__.py to __init__.cpython-312.pyc
+[2.675s] running install_data
+[2.676s] creating /home/marc/conveyor_packages/ros2_ws/install/vision_node/share/ament_index
+[2.676s] creating /home/marc/conveyor_packages/ros2_ws/install/vision_node/share/ament_index/resource_index
+[2.677s] creating /home/marc/conveyor_packages/ros2_ws/install/vision_node/share/ament_index/resource_index/packages
+[2.677s] copying resource/vision_node -> /home/marc/conveyor_packages/ros2_ws/install/vision_node/share/ament_index/resource_index/packages
+[2.677s] copying package.xml -> /home/marc/conveyor_packages/ros2_ws/install/vision_node/share/vision_node
+[2.677s] running install_egg_info
+[2.713s] Copying ../../build/vision_node/vision_node.egg-info to /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages/vision_node-0.0.0-py3.12.egg-info
+[2.715s] running install_scripts
+[2.941s] Installing vision_service script to /home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/vision_node
+[2.942s] writing list of installed files to '/home/marc/conveyor_packages/ros2_ws/build/vision_node/install.log'
+[3.003s] Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/vision_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/vision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/vision_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/vision_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/vision_node/install.log --single-version-externally-managed install_data

@@ -1,0 +1,3 @@
+/home/marc/conveyor_packages/build/vision_interfaces/rosidl_adapter/vision_interfaces:srv/DetectBoxes.idl
+/home/marc/conveyor_packages/build/vision_interfaces/rosidl_adapter/vision_interfaces:srv/GetImage.idl
+/home/marc/conveyor_packages/build/vision_interfaces/rosidl_adapter/vision_interfaces:srv/ArrangePallet.idl

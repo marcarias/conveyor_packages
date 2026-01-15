@@ -1,0 +1,16 @@
+{
+  "package_name": "vision_interfaces",
+  "output_dir": "/home/marc/conveyor_packages/ros2_ws/build/vision_interfaces/rosidl_generator_type_description/vision_interfaces",
+  "idl_tuples": [
+    "/home/marc/conveyor_packages/ros2_ws/build/vision_interfaces/rosidl_adapter/vision_interfaces:srv/DetectBoxes.idl",
+    "/home/marc/conveyor_packages/ros2_ws/build/vision_interfaces/rosidl_adapter/vision_interfaces:srv/GetImage.idl",
+    "/home/marc/conveyor_packages/ros2_ws/build/vision_interfaces/rosidl_adapter/vision_interfaces:srv/ArrangePallet.idl"
+  ],
+  "include_paths": [
+    "sensor_msgs:/opt/ros/jazzy/share/sensor_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

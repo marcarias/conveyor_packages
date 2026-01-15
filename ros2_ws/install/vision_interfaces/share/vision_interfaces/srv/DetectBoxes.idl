@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vision_interfaces/srv/DetectBoxes.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+
+module vision_interfaces {
+  module srv {
+    struct DetectBoxes_Request {
+      sensor_msgs::msg::Image image;
+    };
+    struct DetectBoxes_Response {
+      sequence<uint32> box_ids;
+
+      sequence<float> widths;
+
+      sequence<float> heights;
+
+      sequence<float> depths;
+
+      boolean success;
+    };
+  };
+};

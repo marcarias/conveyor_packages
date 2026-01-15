@@ -1,0 +1,37 @@
+[2.026s] Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/camera_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/camera_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/camera_node/install.log --single-version-externally-managed install_data
+[2.487s] running egg_info
+[2.487s] creating ../../build/camera_node/camera_node.egg-info
+[2.513s] writing ../../build/camera_node/camera_node.egg-info/PKG-INFO
+[2.514s] writing dependency_links to ../../build/camera_node/camera_node.egg-info/dependency_links.txt
+[2.514s] writing entry points to ../../build/camera_node/camera_node.egg-info/entry_points.txt
+[2.514s] writing requirements to ../../build/camera_node/camera_node.egg-info/requires.txt
+[2.514s] writing top-level names to ../../build/camera_node/camera_node.egg-info/top_level.txt
+[2.514s] writing manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'
+[2.578s] reading manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'
+[2.579s] writing manifest file '../../build/camera_node/camera_node.egg-info/SOURCES.txt'
+[2.580s] running build
+[2.580s] running build_py
+[2.582s] creating /home/marc/conveyor_packages/ros2_ws/build/camera_node/build
+[2.582s] creating /home/marc/conveyor_packages/ros2_ws/build/camera_node/build/lib
+[2.582s] creating /home/marc/conveyor_packages/ros2_ws/build/camera_node/build/lib/camera_node
+[2.582s] copying camera_node/camera_service.py -> /home/marc/conveyor_packages/ros2_ws/build/camera_node/build/lib/camera_node
+[2.582s] copying camera_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/build/camera_node/build/lib/camera_node
+[2.583s] running install
+[2.592s] running install_lib
+[2.617s] creating /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages/camera_node
+[2.618s] copying /home/marc/conveyor_packages/ros2_ws/build/camera_node/build/lib/camera_node/camera_service.py -> /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages/camera_node
+[2.619s] copying /home/marc/conveyor_packages/ros2_ws/build/camera_node/build/lib/camera_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages/camera_node
+[2.620s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages/camera_node/camera_service.py to camera_service.cpython-312.pyc
+[2.623s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages/camera_node/__init__.py to __init__.cpython-312.pyc
+[2.624s] running install_data
+[2.624s] creating /home/marc/conveyor_packages/ros2_ws/install/camera_node/share/ament_index
+[2.624s] creating /home/marc/conveyor_packages/ros2_ws/install/camera_node/share/ament_index/resource_index
+[2.625s] creating /home/marc/conveyor_packages/ros2_ws/install/camera_node/share/ament_index/resource_index/packages
+[2.625s] copying resource/camera_node -> /home/marc/conveyor_packages/ros2_ws/install/camera_node/share/ament_index/resource_index/packages
+[2.626s] copying package.xml -> /home/marc/conveyor_packages/ros2_ws/install/camera_node/share/camera_node
+[2.626s] running install_egg_info
+[2.667s] Copying ../../build/camera_node/camera_node.egg-info to /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages/camera_node-0.0.0-py3.12.egg-info
+[2.669s] running install_scripts
+[2.899s] Installing camera_service script to /home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/camera_node
+[2.900s] writing list of installed files to '/home/marc/conveyor_packages/ros2_ws/build/camera_node/install.log'
+[2.949s] Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/camera_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/camera_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/camera_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/camera_node/install.log --single-version-externally-managed install_data

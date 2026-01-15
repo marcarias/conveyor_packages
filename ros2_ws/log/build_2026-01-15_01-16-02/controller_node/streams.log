@@ -1,0 +1,37 @@
+[2.078s] Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/controller_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/controller_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/controller_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/controller_node/install.log --single-version-externally-managed install_data
+[2.528s] running egg_info
+[2.529s] creating ../../build/controller_node/controller_node.egg-info
+[2.560s] writing ../../build/controller_node/controller_node.egg-info/PKG-INFO
+[2.560s] writing dependency_links to ../../build/controller_node/controller_node.egg-info/dependency_links.txt
+[2.560s] writing entry points to ../../build/controller_node/controller_node.egg-info/entry_points.txt
+[2.561s] writing requirements to ../../build/controller_node/controller_node.egg-info/requires.txt
+[2.561s] writing top-level names to ../../build/controller_node/controller_node.egg-info/top_level.txt
+[2.561s] writing manifest file '../../build/controller_node/controller_node.egg-info/SOURCES.txt'
+[2.623s] reading manifest file '../../build/controller_node/controller_node.egg-info/SOURCES.txt'
+[2.624s] writing manifest file '../../build/controller_node/controller_node.egg-info/SOURCES.txt'
+[2.625s] running build
+[2.625s] running build_py
+[2.626s] creating /home/marc/conveyor_packages/ros2_ws/build/controller_node/build
+[2.626s] creating /home/marc/conveyor_packages/ros2_ws/build/controller_node/build/lib
+[2.627s] creating /home/marc/conveyor_packages/ros2_ws/build/controller_node/build/lib/controller_node
+[2.627s] copying controller_node/controller_service.py -> /home/marc/conveyor_packages/ros2_ws/build/controller_node/build/lib/controller_node
+[2.627s] copying controller_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/build/controller_node/build/lib/controller_node
+[2.628s] running install
+[2.643s] running install_lib
+[2.676s] creating /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages/controller_node
+[2.677s] copying /home/marc/conveyor_packages/ros2_ws/build/controller_node/build/lib/controller_node/controller_service.py -> /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages/controller_node
+[2.678s] copying /home/marc/conveyor_packages/ros2_ws/build/controller_node/build/lib/controller_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages/controller_node
+[2.679s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages/controller_node/controller_service.py to controller_service.cpython-312.pyc
+[2.685s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages/controller_node/__init__.py to __init__.cpython-312.pyc
+[2.685s] running install_data
+[2.686s] creating /home/marc/conveyor_packages/ros2_ws/install/controller_node/share/ament_index
+[2.687s] creating /home/marc/conveyor_packages/ros2_ws/install/controller_node/share/ament_index/resource_index
+[2.688s] creating /home/marc/conveyor_packages/ros2_ws/install/controller_node/share/ament_index/resource_index/packages
+[2.688s] copying resource/controller_node -> /home/marc/conveyor_packages/ros2_ws/install/controller_node/share/ament_index/resource_index/packages
+[2.688s] copying package.xml -> /home/marc/conveyor_packages/ros2_ws/install/controller_node/share/controller_node
+[2.689s] running install_egg_info
+[2.727s] Copying ../../build/controller_node/controller_node.egg-info to /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages/controller_node-0.0.0-py3.12.egg-info
+[2.729s] running install_scripts
+[2.939s] Installing controller script to /home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/controller_node
+[2.940s] writing list of installed files to '/home/marc/conveyor_packages/ros2_ws/build/controller_node/install.log'
+[3.004s] Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/controller_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/controller_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/controller_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/controller_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/controller_node/install.log --single-version-externally-managed install_data

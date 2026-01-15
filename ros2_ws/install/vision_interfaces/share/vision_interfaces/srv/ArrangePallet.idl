@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vision_interfaces/srv/ArrangePallet.srv
+// generated code does not contain a copyright notice
+
+
+module vision_interfaces {
+  module srv {
+    struct ArrangePallet_Request {
+      sequence<uint32> box_ids;
+
+      sequence<float> widths;
+
+      sequence<float> heights;
+
+      sequence<float> depths;
+    };
+    struct ArrangePallet_Response {
+      string strategy;
+
+      sequence<string> layer_descriptions;
+
+      uint32 total_layers;
+
+      float pallet_fill_percentage;
+
+      boolean success;
+    };
+  };
+};

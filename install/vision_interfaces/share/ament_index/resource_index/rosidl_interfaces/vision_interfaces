@@ -1,0 +1,6 @@
+srv/ArrangePallet.idl
+srv/ArrangePallet.srv
+srv/DetectBoxes.idl
+srv/DetectBoxes.srv
+srv/GetImage.idl
+srv/GetImage.srv

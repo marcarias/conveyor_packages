@@ -1,0 +1,35 @@
+running egg_info
+creating ../../../build/pallet_node/pallet_node.egg-info
+writing ../../../build/pallet_node/pallet_node.egg-info/PKG-INFO
+writing dependency_links to ../../../build/pallet_node/pallet_node.egg-info/dependency_links.txt
+writing entry points to ../../../build/pallet_node/pallet_node.egg-info/entry_points.txt
+writing requirements to ../../../build/pallet_node/pallet_node.egg-info/requires.txt
+writing top-level names to ../../../build/pallet_node/pallet_node.egg-info/top_level.txt
+writing manifest file '../../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'
+reading manifest file '../../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'
+writing manifest file '../../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/marc/conveyor_packages/build/pallet_node/build
+creating /home/marc/conveyor_packages/build/pallet_node/build/lib
+creating /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node
+copying pallet_node/__init__.py -> /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node
+copying pallet_node/pallet_service.py -> /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node
+running install
+running install_lib
+creating /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node
+copying /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node/__init__.py -> /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node
+copying /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node/pallet_service.py -> /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node
+byte-compiling /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node/pallet_service.py to pallet_service.cpython-312.pyc
+running install_data
+creating /home/marc/conveyor_packages/install/pallet_node/share/ament_index
+creating /home/marc/conveyor_packages/install/pallet_node/share/ament_index/resource_index
+creating /home/marc/conveyor_packages/install/pallet_node/share/ament_index/resource_index/packages
+copying resource/pallet_node -> /home/marc/conveyor_packages/install/pallet_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/marc/conveyor_packages/install/pallet_node/share/pallet_node
+running install_egg_info
+Copying ../../../build/pallet_node/pallet_node.egg-info to /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node-0.0.0-py3.12.egg-info
+running install_scripts
+Installing pallet_service script to /home/marc/conveyor_packages/install/pallet_node/lib/pallet_node
+writing list of installed files to '/home/marc/conveyor_packages/build/pallet_node/install.log'

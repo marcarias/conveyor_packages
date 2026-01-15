@@ -1,0 +1,8 @@
+{
+  "package_name": "vision_interfaces",
+  "non_idl_tuples": [
+    "/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces:srv/DetectBoxes.srv",
+    "/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces:srv/GetImage.srv",
+    "/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces:srv/ArrangePallet.srv"
+  ]
+}

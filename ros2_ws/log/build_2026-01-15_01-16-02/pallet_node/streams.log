@@ -1,0 +1,37 @@
+[2.337s] Invoking command in '/home/marc/conveyor_packages/ros2_ws/src/pallet_node': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/pallet_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pallet_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/pallet_node/install.log --single-version-externally-managed install_data
+[2.769s] running egg_info
+[2.770s] creating ../../build/pallet_node/pallet_node.egg-info
+[2.799s] writing ../../build/pallet_node/pallet_node.egg-info/PKG-INFO
+[2.801s] writing dependency_links to ../../build/pallet_node/pallet_node.egg-info/dependency_links.txt
+[2.801s] writing entry points to ../../build/pallet_node/pallet_node.egg-info/entry_points.txt
+[2.801s] writing requirements to ../../build/pallet_node/pallet_node.egg-info/requires.txt
+[2.801s] writing top-level names to ../../build/pallet_node/pallet_node.egg-info/top_level.txt
+[2.801s] writing manifest file '../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'
+[2.863s] reading manifest file '../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'
+[2.865s] writing manifest file '../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'
+[2.865s] running build
+[2.866s] running build_py
+[2.866s] creating /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build
+[2.866s] creating /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build/lib
+[2.867s] creating /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build/lib/pallet_node
+[2.867s] copying pallet_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build/lib/pallet_node
+[2.867s] copying pallet_node/pallet_service.py -> /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build/lib/pallet_node
+[2.868s] running install
+[2.878s] running install_lib
+[2.905s] creating /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages/pallet_node
+[2.906s] copying /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build/lib/pallet_node/__init__.py -> /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages/pallet_node
+[2.906s] copying /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build/lib/pallet_node/pallet_service.py -> /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages/pallet_node
+[2.907s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages/pallet_node/__init__.py to __init__.cpython-312.pyc
+[2.908s] byte-compiling /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages/pallet_node/pallet_service.py to pallet_service.cpython-312.pyc
+[2.913s] running install_data
+[2.914s] creating /home/marc/conveyor_packages/ros2_ws/install/pallet_node/share/ament_index
+[2.914s] creating /home/marc/conveyor_packages/ros2_ws/install/pallet_node/share/ament_index/resource_index
+[2.915s] creating /home/marc/conveyor_packages/ros2_ws/install/pallet_node/share/ament_index/resource_index/packages
+[2.915s] copying resource/pallet_node -> /home/marc/conveyor_packages/ros2_ws/install/pallet_node/share/ament_index/resource_index/packages
+[2.916s] copying package.xml -> /home/marc/conveyor_packages/ros2_ws/install/pallet_node/share/pallet_node
+[2.916s] running install_egg_info
+[2.957s] Copying ../../build/pallet_node/pallet_node.egg-info to /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages/pallet_node-0.0.0-py3.12.egg-info
+[2.959s] running install_scripts
+[3.123s] Installing pallet_service script to /home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/pallet_node
+[3.123s] writing list of installed files to '/home/marc/conveyor_packages/ros2_ws/build/pallet_node/install.log'
+[3.154s] Invoked command in '/home/marc/conveyor_packages/ros2_ws/src/pallet_node' returned '0': AMENT_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/marc/conveyor_packages/ros2_ws/build/pallet_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/ros2_ws/install/pallet_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/ros2_ws/install/vision_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pallet_node build --build-base /home/marc/conveyor_packages/ros2_ws/build/pallet_node/build install --record /home/marc/conveyor_packages/ros2_ws/build/pallet_node/install.log --single-version-externally-managed install_data

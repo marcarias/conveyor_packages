@@ -1,0 +1,632 @@
+[0.000000] (-) TimerEvent: {}
+[0.000260] (vision_interfaces) JobQueued: {'identifier': 'vision_interfaces', 'dependencies': OrderedDict()}
+[0.000300] (camera_node) JobQueued: {'identifier': 'camera_node', 'dependencies': OrderedDict({'vision_interfaces': '/home/marc/conveyor_packages/install/vision_interfaces'})}
+[0.000331] (controller_node) JobQueued: {'identifier': 'controller_node', 'dependencies': OrderedDict({'vision_interfaces': '/home/marc/conveyor_packages/install/vision_interfaces'})}
+[0.000345] (pallet_node) JobQueued: {'identifier': 'pallet_node', 'dependencies': OrderedDict({'vision_interfaces': '/home/marc/conveyor_packages/install/vision_interfaces'})}
+[0.000354] (vision_node) JobQueued: {'identifier': 'vision_node', 'dependencies': OrderedDict({'vision_interfaces': '/home/marc/conveyor_packages/install/vision_interfaces'})}
+[0.001181] (vision_interfaces) JobStarted: {'identifier': 'vision_interfaces'}
+[0.017766] (vision_interfaces) JobProgress: {'identifier': 'vision_interfaces', 'progress': 'cmake'}
+[0.020622] (vision_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/marc/conveyor_packages/ros2_ws/src/vision_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/marc/conveyor_packages/install/vision_interfaces'], 'cwd': '/home/marc/conveyor_packages/build/vision_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/vision_interfaces', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.099919] (-) TimerEvent: {}
+[0.200700] (-) TimerEvent: {}
+[0.301409] (-) TimerEvent: {}
+[0.402118] (-) TimerEvent: {}
+[0.502674] (-) TimerEvent: {}
+[0.509098] (vision_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.603322] (-) TimerEvent: {}
+[0.704056] (-) TimerEvent: {}
+[0.804878] (-) TimerEvent: {}
+[0.905732] (-) TimerEvent: {}
+[1.006690] (-) TimerEvent: {}
+[1.107460] (-) TimerEvent: {}
+[1.208250] (-) TimerEvent: {}
+[1.309032] (-) TimerEvent: {}
+[1.409921] (-) TimerEvent: {}
+[1.510576] (-) TimerEvent: {}
+[1.611249] (-) TimerEvent: {}
+[1.711944] (-) TimerEvent: {}
+[1.804813] (vision_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.812042] (-) TimerEvent: {}
+[1.912640] (-) TimerEvent: {}
+[2.013139] (-) TimerEvent: {}
+[2.113610] (-) TimerEvent: {}
+[2.214137] (-) TimerEvent: {}
+[2.314877] (-) TimerEvent: {}
+[2.351834] (vision_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.415107] (-) TimerEvent: {}
+[2.515719] (-) TimerEvent: {}
+[2.616086] (-) TimerEvent: {}
+[2.621988] (vision_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.633595] (vision_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.644214] (vision_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.645173] (vision_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.716318] (-) TimerEvent: {}
+[2.725372] (vision_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.816843] (-) TimerEvent: {}
+[2.917695] (-) TimerEvent: {}
+[3.018390] (-) TimerEvent: {}
+[3.119050] (-) TimerEvent: {}
+[3.161297] (vision_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.168742] (vision_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.169201] (vision_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.169738] (vision_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.206643] (vision_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.219293] (-) TimerEvent: {}
+[3.320108] (-) TimerEvent: {}
+[3.373105] (vision_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.420308] (-) TimerEvent: {}
+[3.520725] (-) TimerEvent: {}
+[3.560310] (vision_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.620972] (-) TimerEvent: {}
+[3.721492] (-) TimerEvent: {}
+[3.818093] (vision_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[3.821602] (-) TimerEvent: {}
+[3.847786] (vision_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[3.880639] (vision_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.910717] (vision_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.921742] (-) TimerEvent: {}
+[4.022130] (-) TimerEvent: {}
+[4.088335] (vision_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.122320] (-) TimerEvent: {}
+[4.126271] (vision_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.222501] (-) TimerEvent: {}
+[4.322876] (-) TimerEvent: {}
+[4.423448] (-) TimerEvent: {}
+[4.523922] (-) TimerEvent: {}
+[4.624505] (-) TimerEvent: {}
+[4.724908] (-) TimerEvent: {}
+[4.825338] (-) TimerEvent: {}
+[4.828532] (vision_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[4.925632] (-) TimerEvent: {}
+[5.026128] (-) TimerEvent: {}
+[5.126486] (-) TimerEvent: {}
+[5.226967] (-) TimerEvent: {}
+[5.327402] (-) TimerEvent: {}
+[5.427860] (-) TimerEvent: {}
+[5.528407] (-) TimerEvent: {}
+[5.628952] (-) TimerEvent: {}
+[5.729363] (-) TimerEvent: {}
+[5.740511] (vision_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.829510] (-) TimerEvent: {}
+[5.929965] (-) TimerEvent: {}
+[6.030356] (-) TimerEvent: {}
+[6.090270] (vision_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.097594] (vision_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[6.130533] (-) TimerEvent: {}
+[6.213065] (vision_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[6.230775] (-) TimerEvent: {}
+[6.331325] (-) TimerEvent: {}
+[6.431665] (-) TimerEvent: {}
+[6.532035] (-) TimerEvent: {}
+[6.632488] (-) TimerEvent: {}
+[6.732932] (-) TimerEvent: {}
+[6.833236] (-) TimerEvent: {}
+[6.899557] (vision_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[6.933626] (-) TimerEvent: {}
+[6.976673] (vision_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[7.031270] (vision_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.033829] (-) TimerEvent: {}
+[7.034677] (vision_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.041670] (vision_interfaces) StdoutLine: {'line': b'-- Configuring done (6.9s)\n'}
+[7.118487] (vision_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[7.133971] (-) TimerEvent: {}
+[7.136327] (vision_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/marc/conveyor_packages/build/vision_interfaces\n'}
+[7.151727] (vision_interfaces) CommandEnded: {'returncode': 0}
+[7.152569] (vision_interfaces) JobProgress: {'identifier': 'vision_interfaces', 'progress': 'build'}
+[7.153433] (vision_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/marc/conveyor_packages/build/vision_interfaces', '--', '-j20', '-l20'], 'cwd': '/home/marc/conveyor_packages/build/vision_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/vision_interfaces', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[7.200228] (vision_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[7.208836] (vision_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_vision_interfaces\n'}
+[7.234393] (-) TimerEvent: {}
+[7.334742] (-) TimerEvent: {}
+[7.435452] (vision_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[7.435665] (-) TimerEvent: {}
+[7.436466] (vision_interfaces) StdoutLine: {'line': b'creating vision_interfaces.egg-info\n'}
+[7.454495] (vision_interfaces) StdoutLine: {'line': b'writing vision_interfaces.egg-info/PKG-INFO\n'}
+[7.455056] (vision_interfaces) StdoutLine: {'line': b'writing dependency_links to vision_interfaces.egg-info/dependency_links.txt\n'}
+[7.455240] (vision_interfaces) StdoutLine: {'line': b'writing top-level names to vision_interfaces.egg-info/top_level.txt\n'}
+[7.455661] (vision_interfaces) StdoutLine: {'line': b"writing manifest file 'vision_interfaces.egg-info/SOURCES.txt'\n"}
+[7.474573] (vision_interfaces) StdoutLine: {'line': b'[  1%] Built target vision_interfaces__rosidl_generator_type_description\n'}
+[7.486017] (vision_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.495935] (vision_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.513421] (vision_interfaces) StdoutLine: {'line': b"reading manifest file 'vision_interfaces.egg-info/SOURCES.txt'\n"}
+[7.514004] (vision_interfaces) StdoutLine: {'line': b"writing manifest file 'vision_interfaces.egg-info/SOURCES.txt'\n"}
+[7.536003] (-) TimerEvent: {}
+[7.542820] (vision_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_vision_interfaces_egg\n'}
+[7.636232] (-) TimerEvent: {}
+[7.736757] (-) TimerEvent: {}
+[7.837107] (-) TimerEvent: {}
+[7.937896] (-) TimerEvent: {}
+[7.943844] (vision_interfaces) StdoutLine: {'line': b'[  5%] Built target vision_interfaces__cpp\n'}
+[8.023514] (vision_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/detect_boxes__type_support.c.o\x1b[0m\n'}
+[8.024366] (vision_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/detect_boxes__functions.c.o\x1b[0m\n'}
+[8.024589] (vision_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/detect_boxes__description.c.o\x1b[0m\n'}
+[8.024746] (vision_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/get_image__description.c.o\x1b[0m\n'}
+[8.027039] (vision_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/get_image__type_support.c.o\x1b[0m\n'}
+[8.029409] (vision_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/arrange_pallet__description.c.o\x1b[0m\n'}
+[8.030541] (vision_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/get_image__functions.c.o\x1b[0m\n'}
+[8.032430] (vision_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/arrange_pallet__functions.c.o\x1b[0m\n'}
+[8.033256] (vision_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vision_interfaces/srv/detail/arrange_pallet__type_support.c.o\x1b[0m\n'}
+[8.038247] (-) TimerEvent: {}
+[8.138726] (-) TimerEvent: {}
+[8.194400] (vision_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libvision_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[8.239025] (-) TimerEvent: {}
+[8.339843] (-) TimerEvent: {}
+[8.423320] (vision_interfaces) StdoutLine: {'line': b'[ 24%] Built target vision_interfaces__rosidl_generator_c\n'}
+[8.441216] (vision_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.441573] (-) TimerEvent: {}
+[8.441809] (vision_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.441969] (vision_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[8.442552] (vision_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.442852] (vision_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.444947] (vision_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.541964] (-) TimerEvent: {}
+[8.642795] (-) TimerEvent: {}
+[8.743752] (-) TimerEvent: {}
+[8.844499] (-) TimerEvent: {}
+[8.912403] (vision_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interfaces/srv/detect_boxes__type_support.cpp.o\x1b[0m\n'}
+[8.912827] (vision_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interfaces/srv/arrange_pallet__type_support.cpp.o\x1b[0m\n'}
+[8.913760] (vision_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interfaces/srv/get_image__type_support.cpp.o\x1b[0m\n'}
+[8.926950] (vision_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interfaces/srv/get_image__type_support.cpp.o\x1b[0m\n'}
+[8.928213] (vision_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interfaces/srv/arrange_pallet__type_support.cpp.o\x1b[0m\n'}
+[8.928540] (vision_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interfaces/srv/detect_boxes__type_support.cpp.o\x1b[0m\n'}
+[8.944814] (-) TimerEvent: {}
+[9.041343] (vision_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interfaces/srv/detail/detect_boxes__type_support.c.o\x1b[0m\n'}
+[9.042472] (vision_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interfaces/srv/detail/get_image__type_support.c.o\x1b[0m\n'}
+[9.044498] (vision_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libvision_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.044862] (-) TimerEvent: {}
+[9.045206] (vision_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interfaces/srv/detail/arrange_pallet__type_support.c.o\x1b[0m\n'}
+[9.086598] (vision_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interfaces/srv/detail/detect_boxes__type_support.cpp.o\x1b[0m\n'}
+[9.088082] (vision_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interfaces/srv/detail/get_image__type_support.cpp.o\x1b[0m\n'}
+[9.091496] (vision_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interfaces/srv/detail/arrange_pallet__type_support.cpp.o\x1b[0m\n'}
+[9.145089] (-) TimerEvent: {}
+[9.187207] (vision_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libvision_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.245446] (-) TimerEvent: {}
+[9.299051] (vision_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interfaces/srv/detail/dds_fastrtps/arrange_pallet__type_support.cpp.o\x1b[0m\n'}
+[9.299465] (vision_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interfaces/srv/detail/dds_fastrtps/detect_boxes__type_support.cpp.o\x1b[0m\n'}
+[9.300652] (vision_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interfaces/srv/detail/dds_fastrtps/get_image__type_support.cpp.o\x1b[0m\n'}
+[9.309696] (vision_interfaces) StdoutLine: {'line': b'[ 66%] Built target vision_interfaces__rosidl_typesupport_c\n'}
+[9.324524] (vision_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interfaces/srv/detail/arrange_pallet__type_support_c.cpp.o\x1b[0m\n'}
+[9.324968] (vision_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interfaces/srv/detail/detect_boxes__type_support_c.cpp.o\x1b[0m\n'}
+[9.326096] (vision_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/vision_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interfaces/srv/detail/get_image__type_support_c.cpp.o\x1b[0m\n'}
+[9.345762] (-) TimerEvent: {}
+[9.446533] (-) TimerEvent: {}
+[9.459459] (vision_interfaces) StdoutLine: {'line': b'[ 72%] Built target vision_interfaces__rosidl_typesupport_introspection_c\n'}
+[9.546780] (-) TimerEvent: {}
+[9.647537] (-) TimerEvent: {}
+[9.748464] (-) TimerEvent: {}
+[9.849279] (-) TimerEvent: {}
+[9.950141] (-) TimerEvent: {}
+[10.050928] (-) TimerEvent: {}
+[10.151886] (-) TimerEvent: {}
+[10.235120] (vision_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libvision_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.252285] (-) TimerEvent: {}
+[10.353021] (-) TimerEvent: {}
+[10.453790] (-) TimerEvent: {}
+[10.554427] (-) TimerEvent: {}
+[10.577525] (vision_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libvision_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.594616] (vision_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libvision_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.595656] (vision_interfaces) StdoutLine: {'line': b'[ 77%] Built target vision_interfaces__rosidl_typesupport_cpp\n'}
+[10.654735] (-) TimerEvent: {}
+[10.755526] (-) TimerEvent: {}
+[10.817778] (vision_interfaces) StdoutLine: {'line': b'[ 77%] Built target vision_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[10.818567] (vision_interfaces) StdoutLine: {'line': b'[ 77%] Built target vision_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[10.855893] (-) TimerEvent: {}
+[10.956435] (-) TimerEvent: {}
+[10.958464] (vision_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libvision_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.056872] (-) TimerEvent: {}
+[11.157481] (-) TimerEvent: {}
+[11.220187] (vision_interfaces) StdoutLine: {'line': b'[ 79%] Built target vision_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[11.238513] (vision_interfaces) StdoutLine: {'line': b'[ 79%] Built target vision_interfaces\n'}
+[11.255207] (vision_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.257818] (-) TimerEvent: {}
+[11.358236] (-) TimerEvent: {}
+[11.458641] (-) TimerEvent: {}
+[11.559224] (-) TimerEvent: {}
+[11.659813] (-) TimerEvent: {}
+[11.760392] (-) TimerEvent: {}
+[11.818611] (vision_interfaces) StdoutLine: {'line': b'[ 81%] Built target vision_interfaces__py\n'}
+[11.836287] (vision_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vision_interfaces/srv/_detect_boxes_s.c.o\x1b[0m\n'}
+[11.837122] (vision_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vision_interfaces/srv/_get_image_s.c.o\x1b[0m\n'}
+[11.837400] (vision_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vision_interfaces/srv/_arrange_pallet_s.c.o\x1b[0m\n'}
+[11.860838] (-) TimerEvent: {}
+[11.961376] (-) TimerEvent: {}
+[12.062016] (-) TimerEvent: {}
+[12.162555] (-) TimerEvent: {}
+[12.163549] (vision_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libvision_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[12.262899] (-) TimerEvent: {}
+[12.363582] (-) TimerEvent: {}
+[12.384999] (vision_interfaces) StdoutLine: {'line': b'[ 88%] Built target vision_interfaces__rosidl_generator_py\n'}
+[12.412058] (vision_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/vision_interfaces/_vision_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.412307] (vision_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/vision_interfaces/_vision_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.412392] (vision_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/vision_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/vision_interfaces/_vision_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.463983] (-) TimerEvent: {}
+[12.562772] (vision_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/vision_interfaces/vision_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.562987] (vision_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/vision_interfaces/vision_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.564066] (-) TimerEvent: {}
+[12.566618] (vision_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/vision_interfaces/vision_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.664699] (-) TimerEvent: {}
+[12.694501] (vision_interfaces) StdoutLine: {'line': b'[100%] Built target vision_interfaces_s__rosidl_typesupport_c\n'}
+[12.696082] (vision_interfaces) StdoutLine: {'line': b'[100%] Built target vision_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[12.728566] (vision_interfaces) StdoutLine: {'line': b'[100%] Built target vision_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[12.745902] (vision_interfaces) CommandEnded: {'returncode': 0}
+[12.747320] (vision_interfaces) JobProgress: {'identifier': 'vision_interfaces', 'progress': 'install'}
+[12.758264] (vision_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/marc/conveyor_packages/build/vision_interfaces'], 'cwd': '/home/marc/conveyor_packages/build/vision_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/vision_interfaces', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[12.764808] (-) TimerEvent: {}
+[12.765625] (vision_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.767174] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/ament_index/resource_index/rosidl_interfaces/vision_interfaces\n'}
+[12.767841] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/DetectBoxes.json\n'}
+[12.767964] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/GetImage.json\n'}
+[12.768041] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/ArrangePallet.json\n'}
+[12.768477] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces\n'}
+[12.769030] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg\n'}
+[12.769159] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.769428] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv\n'}
+[12.769519] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detect_boxes.h\n'}
+[12.769960] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail\n'}
+[12.770469] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__type_support.h\n'}
+[12.770568] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__type_support.c\n'}
+[12.771041] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__functions.h\n'}
+[12.771121] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__type_support.c\n'}
+[12.771189] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__description.c\n'}
+[12.771369] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__type_support.c\n'}
+[12.771533] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__type_support.h\n'}
+[12.772011] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__functions.h\n'}
+[12.772154] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__description.c\n'}
+[12.772244] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__functions.c\n'}
+[12.772446] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__type_support.h\n'}
+[12.772556] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__struct.h\n'}
+[12.773299] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__struct.h\n'}
+[12.773559] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__struct.h\n'}
+[12.773666] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__description.c\n'}
+[12.773981] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__functions.h\n'}
+[12.774090] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__functions.c\n'}
+[12.774248] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__functions.c\n'}
+[12.774407] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/arrange_pallet.h\n'}
+[12.774499] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/get_image.h\n'}
+[12.774661] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/library_path.sh\n'}
+[12.775045] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/library_path.dsv\n'}
+[12.775209] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_generator_c.so\n'}
+[12.775441] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_generator_c.so" to ""\n'}
+[12.775601] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces\n'}
+[12.775692] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg\n'}
+[12.776028] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.776561] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv\n'}
+[12.776693] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail\n'}
+[12.776769] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__rosidl_typesupport_fastrtps_c.h\n'}
+[12.776834] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__rosidl_typesupport_fastrtps_c.h\n'}
+[12.776912] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__rosidl_typesupport_fastrtps_c.h\n'}
+[12.776977] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[12.777336] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.777503] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces\n'}
+[12.777654] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg\n'}
+[12.777790] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.777867] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv\n'}
+[12.778008] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/arrange_pallet.hpp\n'}
+[12.778589] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail\n'}
+[12.778911] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__builder.hpp\n'}
+[12.779047] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__struct.hpp\n'}
+[12.779141] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__builder.hpp\n'}
+[12.779950] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__type_support.hpp\n'}
+[12.780133] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__traits.hpp\n'}
+[12.780357] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__traits.hpp\n'}
+[12.780907] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__type_support.hpp\n'}
+[12.781205] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__struct.hpp\n'}
+[12.781382] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__type_support.hpp\n'}
+[12.782737] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__builder.hpp\n'}
+[12.783327] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__struct.hpp\n'}
+[12.783472] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__traits.hpp\n'}
+[12.783581] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detect_boxes.hpp\n'}
+[12.783677] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/get_image.hpp\n'}
+[12.783793] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces\n'}
+[12.783885] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg\n'}
+[12.783975] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.784032] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv\n'}
+[12.784094] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail\n'}
+[12.784158] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/dds_fastrtps\n'}
+[12.784226] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.784487] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.784602] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.784683] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.784895] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.785278] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces\n'}
+[12.785362] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg\n'}
+[12.785510] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.785627] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv\n'}
+[12.785915] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail\n'}
+[12.785994] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__type_support.c\n'}
+[12.786136] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__type_support.c\n'}
+[12.786234] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__type_support.c\n'}
+[12.786494] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__rosidl_typesupport_introspection_c.h\n'}
+[12.786585] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__rosidl_typesupport_introspection_c.h\n'}
+[12.786654] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__rosidl_typesupport_introspection_c.h\n'}
+[12.786735] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[12.787264] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.787635] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_c.so\n'}
+[12.787912] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[12.788205] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces\n'}
+[12.788788] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv\n'}
+[12.788921] (vision_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail\n'}
+[12.788981] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__type_support.cpp\n'}
+[12.789035] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.789088] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/detect_boxes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.789140] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/get_image__type_support.cpp\n'}
+[12.789197] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__type_support.cpp\n'}
+[12.789541] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/include/vision_interfaces/vision_interfaces/srv/detail/arrange_pallet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.789624] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[12.790297] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.790476] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_cpp.so\n'}
+[12.791285] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[12.791553] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/pythonpath.sh\n'}
+[12.791625] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/pythonpath.dsv\n'}
+[12.791989] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces-0.0.0-py3.12.egg-info\n'}
+[12.792423] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[12.792557] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[12.793050] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[12.793263] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[12.793365] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces\n'}
+[12.793839] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/_vision_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.793982] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv\n'}
+[12.794461] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_get_image_s.c\n'}
+[12.794593] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_get_image.py\n'}
+[12.794809] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_arrange_pallet.py\n'}
+[12.795020] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_detect_boxes_s.c\n'}
+[12.795303] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_detect_boxes.py\n'}
+[12.795961] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/__init__.py\n'}
+[12.796203] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_arrange_pallet_s.c\n'}
+[12.796374] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/_vision_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[12.796531] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[12.796701] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[12.797130] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_c.so\n'}
+[12.797234] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/__init__.py\n'}
+[12.797287] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/_vision_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.846114] (vision_interfaces) StdoutLine: {'line': b"Listing '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces'...\n"}
+[12.846297] (vision_interfaces) StdoutLine: {'line': b"Compiling '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/__init__.py'...\n"}
+[12.846356] (vision_interfaces) StdoutLine: {'line': b"Listing '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv'...\n"}
+[12.846409] (vision_interfaces) StdoutLine: {'line': b"Compiling '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/__init__.py'...\n"}
+[12.846455] (vision_interfaces) StdoutLine: {'line': b"Compiling '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_arrange_pallet.py'...\n"}
+[12.846498] (vision_interfaces) StdoutLine: {'line': b"Compiling '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_detect_boxes.py'...\n"}
+[12.846541] (vision_interfaces) StdoutLine: {'line': b"Compiling '/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/srv/_get_image.py'...\n"}
+[12.851669] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[12.852153] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.852327] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[12.852866] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.853005] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_c.so\n'}
+[12.853094] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages/vision_interfaces/vision_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[12.853164] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_generator_py.so\n'}
+[12.853544] (vision_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/marc/conveyor_packages/install/vision_interfaces/lib/libvision_interfaces__rosidl_generator_py.so" to ""\n'}
+[12.853717] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/DetectBoxes.idl\n'}
+[12.854274] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/GetImage.idl\n'}
+[12.855002] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/ArrangePallet.idl\n'}
+[12.855139] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/DetectBoxes.srv\n'}
+[12.855491] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/GetImage.srv\n'}
+[12.855674] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/srv/ArrangePallet.srv\n'}
+[12.855772] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/ament_index/resource_index/package_run_dependencies/vision_interfaces\n'}
+[12.855872] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/ament_index/resource_index/parent_prefix_path/vision_interfaces\n'}
+[12.856160] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/ament_prefix_path.sh\n'}
+[12.856315] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/ament_prefix_path.dsv\n'}
+[12.856380] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/path.sh\n'}
+[12.856622] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/environment/path.dsv\n'}
+[12.856730] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/local_setup.bash\n'}
+[12.857008] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/local_setup.sh\n'}
+[12.857107] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/local_setup.zsh\n'}
+[12.857287] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/local_setup.dsv\n'}
+[12.857468] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.dsv\n'}
+[12.858362] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/ament_index/resource_index/packages/vision_interfaces\n'}
+[12.858976] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_generator_cExport.cmake\n'}
+[12.859191] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.859535] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.859660] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.859732] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_generator_cppExport.cmake\n'}
+[12.859879] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.860230] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.860403] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.860532] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.860829] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[12.860953] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.861018] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.861086] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.861394] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[12.861531] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.861600] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_generator_pyExport.cmake\n'}
+[12.861982] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/export_vision_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.862774] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[12.862886] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.862946] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.863012] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.863065] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.863119] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.863525] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.863600] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfacesConfig.cmake\n'}
+[12.863652] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/cmake/vision_interfacesConfig-version.cmake\n'}
+[12.863704] (vision_interfaces) StdoutLine: {'line': b'-- Installing: /home/marc/conveyor_packages/install/vision_interfaces/share/vision_interfaces/package.xml\n'}
+[12.865254] (-) TimerEvent: {}
+[12.866979] (vision_interfaces) CommandEnded: {'returncode': 0}
+[12.910851] (vision_interfaces) JobEnded: {'identifier': 'vision_interfaces', 'rc': 0}
+[12.911774] (camera_node) JobStarted: {'identifier': 'camera_node'}
+[12.915904] (controller_node) JobStarted: {'identifier': 'controller_node'}
+[12.923683] (pallet_node) JobStarted: {'identifier': 'pallet_node'}
+[12.937983] (vision_node) JobStarted: {'identifier': 'vision_node'}
+[12.965497] (-) TimerEvent: {}
+[13.066195] (-) TimerEvent: {}
+[13.166815] (-) TimerEvent: {}
+[13.267333] (-) TimerEvent: {}
+[13.367836] (-) TimerEvent: {}
+[13.468277] (-) TimerEvent: {}
+[13.568638] (-) TimerEvent: {}
+[13.668927] (-) TimerEvent: {}
+[13.769418] (-) TimerEvent: {}
+[13.869696] (-) TimerEvent: {}
+[13.970091] (-) TimerEvent: {}
+[14.070454] (-) TimerEvent: {}
+[14.171436] (-) TimerEvent: {}
+[14.271914] (-) TimerEvent: {}
+[14.372349] (-) TimerEvent: {}
+[14.473276] (-) TimerEvent: {}
+[14.573647] (-) TimerEvent: {}
+[14.673995] (-) TimerEvent: {}
+[14.774557] (-) TimerEvent: {}
+[14.874924] (-) TimerEvent: {}
+[14.975337] (-) TimerEvent: {}
+[15.075724] (-) TimerEvent: {}
+[15.176270] (-) TimerEvent: {}
+[15.248152] (camera_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/camera_node', 'build', '--build-base', '/home/marc/conveyor_packages/build/camera_node/build', 'install', '--record', '/home/marc/conveyor_packages/build/camera_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/marc/conveyor_packages/ros2_ws/src/camera_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/marc/conveyor_packages/install/vision_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/camera_node', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/marc/conveyor_packages/build/camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[15.252958] (vision_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/vision_node', 'build', '--build-base', '/home/marc/conveyor_packages/build/vision_node/build', 'install', '--record', '/home/marc/conveyor_packages/build/vision_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/marc/conveyor_packages/ros2_ws/src/vision_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/marc/conveyor_packages/install/vision_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/vision_node', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/marc/conveyor_packages/build/vision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[15.257723] (pallet_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/pallet_node', 'build', '--build-base', '/home/marc/conveyor_packages/build/pallet_node/build', 'install', '--record', '/home/marc/conveyor_packages/build/pallet_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/marc/conveyor_packages/ros2_ws/src/pallet_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/marc/conveyor_packages/install/vision_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/pallet_node', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/marc/conveyor_packages/build/pallet_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[15.264319] (controller_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/controller_node', 'build', '--build-base', '/home/marc/conveyor_packages/build/controller_node/build', 'install', '--record', '/home/marc/conveyor_packages/build/controller_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/marc/conveyor_packages/ros2_ws/src/controller_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/marc/conveyor_packages/install/vision_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marc', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a2b2e02d-535f-4011-ae34-3e4beef7f0fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marc', 'NAME': 'DESKTOP-U1GGS6K', 'WSL_INTEROP': '/run/WSL/1147_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/marc/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/marc/.vscode-server/bin/994fd12f8d3a5aa16f17d42c041e5809167e845a/bin/remote-cli:/home/marc/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Rockwell Software/RSCommon:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Marc/Python/Python31010/Scripts/:/mnt/c/Users/Marc/Python/Python31010/:/mnt/c/Users/Marc/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Marc/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/marc/conveyor_packages/build/controller_node', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/marc/conveyor_packages/build/controller_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages:/home/marc/conveyor_packages/install/vision_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/marc/conveyor_packages/install/vision_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[15.276835] (-) TimerEvent: {}
+[15.377365] (-) TimerEvent: {}
+[15.477909] (-) TimerEvent: {}
+[15.578591] (-) TimerEvent: {}
+[15.604416] (vision_node) StdoutLine: {'line': b'running egg_info\n'}
+[15.604727] (vision_node) StdoutLine: {'line': b'creating ../../../build/vision_node/vision_node.egg-info\n'}
+[15.611843] (camera_node) StdoutLine: {'line': b'running egg_info\n'}
+[15.612380] (camera_node) StdoutLine: {'line': b'creating ../../../build/camera_node/camera_node.egg-info\n'}
+[15.615396] (pallet_node) StdoutLine: {'line': b'running egg_info\n'}
+[15.616015] (controller_node) StdoutLine: {'line': b'running egg_info\n'}
+[15.616138] (pallet_node) StdoutLine: {'line': b'creating ../../../build/pallet_node/pallet_node.egg-info\n'}
+[15.616596] (controller_node) StdoutLine: {'line': b'creating ../../../build/controller_node/controller_node.egg-info\n'}
+[15.631289] (vision_node) StdoutLine: {'line': b'writing ../../../build/vision_node/vision_node.egg-info/PKG-INFO\n'}
+[15.632065] (vision_node) StdoutLine: {'line': b'writing dependency_links to ../../../build/vision_node/vision_node.egg-info/dependency_links.txt\n'}
+[15.632352] (vision_node) StdoutLine: {'line': b'writing entry points to ../../../build/vision_node/vision_node.egg-info/entry_points.txt\n'}
+[15.632911] (vision_node) StdoutLine: {'line': b'writing requirements to ../../../build/vision_node/vision_node.egg-info/requires.txt\n'}
+[15.633722] (vision_node) StdoutLine: {'line': b'writing top-level names to ../../../build/vision_node/vision_node.egg-info/top_level.txt\n'}
+[15.634253] (vision_node) StdoutLine: {'line': b"writing manifest file '../../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[15.639675] (camera_node) StdoutLine: {'line': b'writing ../../../build/camera_node/camera_node.egg-info/PKG-INFO\n'}
+[15.640363] (camera_node) StdoutLine: {'line': b'writing dependency_links to ../../../build/camera_node/camera_node.egg-info/dependency_links.txt\n'}
+[15.640718] (camera_node) StdoutLine: {'line': b'writing entry points to ../../../build/camera_node/camera_node.egg-info/entry_points.txt\n'}
+[15.640930] (camera_node) StdoutLine: {'line': b'writing requirements to ../../../build/camera_node/camera_node.egg-info/requires.txt\n'}
+[15.641222] (camera_node) StdoutLine: {'line': b'writing top-level names to ../../../build/camera_node/camera_node.egg-info/top_level.txt\n'}
+[15.641769] (camera_node) StdoutLine: {'line': b"writing manifest file '../../../build/camera_node/camera_node.egg-info/SOURCES.txt'\n"}
+[15.642043] (pallet_node) StdoutLine: {'line': b'writing ../../../build/pallet_node/pallet_node.egg-info/PKG-INFO\n'}
+[15.643545] (pallet_node) StdoutLine: {'line': b'writing dependency_links to ../../../build/pallet_node/pallet_node.egg-info/dependency_links.txt\n'}
+[15.644171] (pallet_node) StdoutLine: {'line': b'writing entry points to ../../../build/pallet_node/pallet_node.egg-info/entry_points.txt\n'}
+[15.644471] (pallet_node) StdoutLine: {'line': b'writing requirements to ../../../build/pallet_node/pallet_node.egg-info/requires.txt\n'}
+[15.645073] (pallet_node) StdoutLine: {'line': b'writing top-level names to ../../../build/pallet_node/pallet_node.egg-info/top_level.txt\n'}
+[15.645295] (pallet_node) StdoutLine: {'line': b"writing manifest file '../../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'\n"}
+[15.646277] (controller_node) StdoutLine: {'line': b'writing ../../../build/controller_node/controller_node.egg-info/PKG-INFO\n'}
+[15.646948] (controller_node) StdoutLine: {'line': b'writing dependency_links to ../../../build/controller_node/controller_node.egg-info/dependency_links.txt\n'}
+[15.647299] (controller_node) StdoutLine: {'line': b'writing entry points to ../../../build/controller_node/controller_node.egg-info/entry_points.txt\n'}
+[15.647957] (controller_node) StdoutLine: {'line': b'writing requirements to ../../../build/controller_node/controller_node.egg-info/requires.txt\n'}
+[15.648142] (controller_node) StdoutLine: {'line': b'writing top-level names to ../../../build/controller_node/controller_node.egg-info/top_level.txt\n'}
+[15.648293] (controller_node) StdoutLine: {'line': b"writing manifest file '../../../build/controller_node/controller_node.egg-info/SOURCES.txt'\n"}
+[15.678867] (-) TimerEvent: {}
+[15.695303] (vision_node) StdoutLine: {'line': b"reading manifest file '../../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[15.696456] (vision_node) StdoutLine: {'line': b"writing manifest file '../../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[15.697049] (vision_node) StdoutLine: {'line': b'running build\n'}
+[15.697692] (vision_node) StdoutLine: {'line': b'running build_py\n'}
+[15.697912] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/vision_node/build\n'}
+[15.698484] (camera_node) StdoutLine: {'line': b"reading manifest file '../../../build/camera_node/camera_node.egg-info/SOURCES.txt'\n"}
+[15.699295] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/vision_node/build/lib\n'}
+[15.699975] (camera_node) StdoutLine: {'line': b"writing manifest file '../../../build/camera_node/camera_node.egg-info/SOURCES.txt'\n"}
+[15.701702] (camera_node) StdoutLine: {'line': b'running build\n'}
+[15.702547] (camera_node) StdoutLine: {'line': b'running build_py\n'}
+[15.702795] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/camera_node/build\n'}
+[15.703013] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/vision_node/build/lib/vision_node\n'}
+[15.703997] (vision_node) StdoutLine: {'line': b'copying vision_node/vision_client.py -> /home/marc/conveyor_packages/build/vision_node/build/lib/vision_node\n'}
+[15.704262] (vision_node) StdoutLine: {'line': b'copying vision_node/__init__.py -> /home/marc/conveyor_packages/build/vision_node/build/lib/vision_node\n'}
+[15.705303] (vision_node) StdoutLine: {'line': b'running install\n'}
+[15.705816] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/camera_node/build/lib\n'}
+[15.705981] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/camera_node/build/lib/camera_node\n'}
+[15.706947] (camera_node) StdoutLine: {'line': b'copying camera_node/camera_service.py -> /home/marc/conveyor_packages/build/camera_node/build/lib/camera_node\n'}
+[15.707701] (camera_node) StdoutLine: {'line': b'copying camera_node/__init__.py -> /home/marc/conveyor_packages/build/camera_node/build/lib/camera_node\n'}
+[15.708733] (camera_node) StdoutLine: {'line': b'running install\n'}
+[15.708985] (controller_node) StdoutLine: {'line': b"reading manifest file '../../../build/controller_node/controller_node.egg-info/SOURCES.txt'\n"}
+[15.709277] (pallet_node) StdoutLine: {'line': b"reading manifest file '../../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'\n"}
+[15.710262] (pallet_node) StdoutLine: {'line': b"writing manifest file '../../../build/pallet_node/pallet_node.egg-info/SOURCES.txt'\n"}
+[15.711162] (pallet_node) StdoutLine: {'line': b'running build\n'}
+[15.711461] (pallet_node) StdoutLine: {'line': b'running build_py\n'}
+[15.711637] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/pallet_node/build\n'}
+[15.711734] (controller_node) StdoutLine: {'line': b"writing manifest file '../../../build/controller_node/controller_node.egg-info/SOURCES.txt'\n"}
+[15.711828] (controller_node) StdoutLine: {'line': b'running build\n'}
+[15.711905] (controller_node) StdoutLine: {'line': b'running build_py\n'}
+[15.711981] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/controller_node/build\n'}
+[15.712234] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/controller_node/build/lib\n'}
+[15.712457] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/controller_node/build/lib/controller_node\n'}
+[15.712639] (controller_node) StdoutLine: {'line': b'copying controller_node/controller_service.py -> /home/marc/conveyor_packages/build/controller_node/build/lib/controller_node\n'}
+[15.712807] (controller_node) StdoutLine: {'line': b'copying controller_node/__init__.py -> /home/marc/conveyor_packages/build/controller_node/build/lib/controller_node\n'}
+[15.713218] (controller_node) StdoutLine: {'line': b'running install\n'}
+[15.713737] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/pallet_node/build/lib\n'}
+[15.713831] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node\n'}
+[15.713907] (pallet_node) StdoutLine: {'line': b'copying pallet_node/__init__.py -> /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node\n'}
+[15.713972] (pallet_node) StdoutLine: {'line': b'copying pallet_node/pallet_service.py -> /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node\n'}
+[15.714160] (pallet_node) StdoutLine: {'line': b'running install\n'}
+[15.714514] (vision_node) StdoutLine: {'line': b'running install_lib\n'}
+[15.715556] (camera_node) StdoutLine: {'line': b'running install_lib\n'}
+[15.718800] (pallet_node) StdoutLine: {'line': b'running install_lib\n'}
+[15.719963] (controller_node) StdoutLine: {'line': b'running install_lib\n'}
+[15.736553] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages/vision_node\n'}
+[15.737246] (vision_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/vision_node/build/lib/vision_node/vision_client.py -> /home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages/vision_node\n'}
+[15.737920] (vision_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/vision_node/build/lib/vision_node/__init__.py -> /home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages/vision_node\n'}
+[15.738855] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages/camera_node\n'}
+[15.739046] (vision_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages/vision_node/vision_client.py to vision_client.cpython-312.pyc\n'}
+[15.739147] (camera_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/camera_node/build/lib/camera_node/camera_service.py -> /home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages/camera_node\n'}
+[15.739224] (camera_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/camera_node/build/lib/camera_node/__init__.py -> /home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages/camera_node\n'}
+[15.739869] (camera_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages/camera_node/camera_service.py to camera_service.cpython-312.pyc\n'}
+[15.741627] (camera_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages/camera_node/__init__.py to __init__.cpython-312.pyc\n'}
+[15.742374] (camera_node) StdoutLine: {'line': b'running install_data\n'}
+[15.742919] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/camera_node/share/ament_index\n'}
+[15.743706] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node\n'}
+[15.744727] (pallet_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node/__init__.py -> /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node\n'}
+[15.745597] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/camera_node/share/ament_index/resource_index\n'}
+[15.746197] (camera_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/camera_node/share/ament_index/resource_index/packages\n'}
+[15.746483] (camera_node) StdoutLine: {'line': b'copying resource/camera_node -> /home/marc/conveyor_packages/install/camera_node/share/ament_index/resource_index/packages\n'}
+[15.746755] (camera_node) StdoutLine: {'line': b'copying package.xml -> /home/marc/conveyor_packages/install/camera_node/share/camera_node\n'}
+[15.746995] (camera_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.747225] (vision_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages/vision_node/__init__.py to __init__.cpython-312.pyc\n'}
+[15.747443] (vision_node) StdoutLine: {'line': b'running install_data\n'}
+[15.747663] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/vision_node/share/ament_index\n'}
+[15.747872] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/vision_node/share/ament_index/resource_index\n'}
+[15.748363] (vision_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/vision_node/share/ament_index/resource_index/packages\n'}
+[15.748580] (vision_node) StdoutLine: {'line': b'copying resource/vision_node -> /home/marc/conveyor_packages/install/vision_node/share/ament_index/resource_index/packages\n'}
+[15.748765] (vision_node) StdoutLine: {'line': b'copying package.xml -> /home/marc/conveyor_packages/install/vision_node/share/vision_node\n'}
+[15.748957] (vision_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.749100] (pallet_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/pallet_node/build/lib/pallet_node/pallet_service.py -> /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node\n'}
+[15.749225] (pallet_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node/__init__.py to __init__.cpython-312.pyc\n'}
+[15.749533] (pallet_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node/pallet_service.py to pallet_service.cpython-312.pyc\n'}
+[15.749967] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages/controller_node\n'}
+[15.750240] (controller_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/controller_node/build/lib/controller_node/controller_service.py -> /home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages/controller_node\n'}
+[15.750801] (controller_node) StdoutLine: {'line': b'copying /home/marc/conveyor_packages/build/controller_node/build/lib/controller_node/__init__.py -> /home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages/controller_node\n'}
+[15.751263] (controller_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages/controller_node/controller_service.py to controller_service.cpython-312.pyc\n'}
+[15.751366] (controller_node) StdoutLine: {'line': b'byte-compiling /home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages/controller_node/__init__.py to __init__.cpython-312.pyc\n'}
+[15.751524] (controller_node) StdoutLine: {'line': b'running install_data\n'}
+[15.752081] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/controller_node/share/ament_index\n'}
+[15.752881] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/controller_node/share/ament_index/resource_index\n'}
+[15.753121] (pallet_node) StdoutLine: {'line': b'running install_data\n'}
+[15.753360] (controller_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/controller_node/share/ament_index/resource_index/packages\n'}
+[15.753590] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/pallet_node/share/ament_index\n'}
+[15.753827] (controller_node) StdoutLine: {'line': b'copying resource/controller_node -> /home/marc/conveyor_packages/install/controller_node/share/ament_index/resource_index/packages\n'}
+[15.754071] (controller_node) StdoutLine: {'line': b'copying package.xml -> /home/marc/conveyor_packages/install/controller_node/share/controller_node\n'}
+[15.754263] (controller_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.754368] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/pallet_node/share/ament_index/resource_index\n'}
+[15.754451] (pallet_node) StdoutLine: {'line': b'creating /home/marc/conveyor_packages/install/pallet_node/share/ament_index/resource_index/packages\n'}
+[15.754518] (pallet_node) StdoutLine: {'line': b'copying resource/pallet_node -> /home/marc/conveyor_packages/install/pallet_node/share/ament_index/resource_index/packages\n'}
+[15.754586] (pallet_node) StdoutLine: {'line': b'copying package.xml -> /home/marc/conveyor_packages/install/pallet_node/share/pallet_node\n'}
+[15.754653] (pallet_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.769112] (camera_node) StdoutLine: {'line': b'Copying ../../../build/camera_node/camera_node.egg-info to /home/marc/conveyor_packages/install/camera_node/lib/python3.12/site-packages/camera_node-0.0.0-py3.12.egg-info\n'}
+[15.769784] (vision_node) StdoutLine: {'line': b'Copying ../../../build/vision_node/vision_node.egg-info to /home/marc/conveyor_packages/install/vision_node/lib/python3.12/site-packages/vision_node-0.0.0-py3.12.egg-info\n'}
+[15.771229] (camera_node) StdoutLine: {'line': b'running install_scripts\n'}
+[15.771814] (vision_node) StdoutLine: {'line': b'running install_scripts\n'}
+[15.774354] (controller_node) StdoutLine: {'line': b'Copying ../../../build/controller_node/controller_node.egg-info to /home/marc/conveyor_packages/install/controller_node/lib/python3.12/site-packages/controller_node-0.0.0-py3.12.egg-info\n'}
+[15.775355] (pallet_node) StdoutLine: {'line': b'Copying ../../../build/pallet_node/pallet_node.egg-info to /home/marc/conveyor_packages/install/pallet_node/lib/python3.12/site-packages/pallet_node-0.0.0-py3.12.egg-info\n'}
+[15.776097] (controller_node) StdoutLine: {'line': b'running install_scripts\n'}
+[15.776715] (pallet_node) StdoutLine: {'line': b'running install_scripts\n'}
+[15.779212] (-) TimerEvent: {}
+[15.879611] (-) TimerEvent: {}
+[15.923490] (camera_node) StdoutLine: {'line': b'Installing camera_service script to /home/marc/conveyor_packages/install/camera_node/lib/camera_node\n'}
+[15.924906] (camera_node) StdoutLine: {'line': b"writing list of installed files to '/home/marc/conveyor_packages/build/camera_node/install.log'\n"}
+[15.925481] (vision_node) StdoutLine: {'line': b'Installing vision_service script to /home/marc/conveyor_packages/install/vision_node/lib/vision_node\n'}
+[15.926835] (vision_node) StdoutLine: {'line': b"writing list of installed files to '/home/marc/conveyor_packages/build/vision_node/install.log'\n"}
+[15.936804] (pallet_node) StdoutLine: {'line': b'Installing pallet_service script to /home/marc/conveyor_packages/install/pallet_node/lib/pallet_node\n'}
+[15.937909] (pallet_node) StdoutLine: {'line': b"writing list of installed files to '/home/marc/conveyor_packages/build/pallet_node/install.log'\n"}
+[15.939770] (controller_node) StdoutLine: {'line': b'Installing controller script to /home/marc/conveyor_packages/install/controller_node/lib/controller_node\n'}
+[15.940639] (controller_node) StdoutLine: {'line': b"writing list of installed files to '/home/marc/conveyor_packages/build/controller_node/install.log'\n"}
+[15.971517] (vision_node) CommandEnded: {'returncode': 0}
+[15.979165] (vision_node) JobEnded: {'identifier': 'vision_node', 'rc': 0}
+[15.980813] (-) TimerEvent: {}
+[15.981221] (camera_node) CommandEnded: {'returncode': 0}
+[15.987067] (camera_node) JobEnded: {'identifier': 'camera_node', 'rc': 0}
+[15.991003] (controller_node) CommandEnded: {'returncode': 0}
+[16.001240] (controller_node) JobEnded: {'identifier': 'controller_node', 'rc': 0}
+[16.003662] (pallet_node) CommandEnded: {'returncode': 0}
+[16.015053] (pallet_node) JobEnded: {'identifier': 'pallet_node', 'rc': 0}
+[16.017410] (-) EventReactorShutdown: {}

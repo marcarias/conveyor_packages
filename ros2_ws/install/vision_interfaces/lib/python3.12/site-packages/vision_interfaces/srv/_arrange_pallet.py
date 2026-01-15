@@ -1,0 +1,729 @@
+# generated from rosidl_generator_py/resource/_idl.py.em
+# with input from vision_interfaces:srv/ArrangePallet.idl
+# generated code does not contain a copyright notice
+
+# This is being done at the module level and not on the instance level to avoid looking
+# for the same variable multiple times on each instance. This variable is not supposed to
+# change during runtime so it makes sense to only look for it once.
+from os import getenv
+
+ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
+
+
+# Import statements for member types
+
+# Member 'box_ids'
+# Member 'widths'
+# Member 'heights'
+# Member 'depths'
+import array  # noqa: E402, I100
+
+import builtins  # noqa: E402, I100
+
+import math  # noqa: E402, I100
+
+import rosidl_parser.definition  # noqa: E402, I100
+
+
+class Metaclass_ArrangePallet_Request(type):
+    """Metaclass of message 'ArrangePallet_Request'."""
+
+    _CREATE_ROS_MESSAGE = None
+    _CONVERT_FROM_PY = None
+    _CONVERT_TO_PY = None
+    _DESTROY_ROS_MESSAGE = None
+    _TYPE_SUPPORT = None
+
+    __constants = {
+    }
+
+    @classmethod
+    def __import_type_support__(cls):
+        try:
+            from rosidl_generator_py import import_type_support
+            module = import_type_support('vision_interfaces')
+        except ImportError:
+            import logging
+            import traceback
+            logger = logging.getLogger(
+                'vision_interfaces.srv.ArrangePallet_Request')
+            logger.debug(
+                'Failed to import needed modules for type support:\n' +
+                traceback.format_exc())
+        else:
+            cls._CREATE_ROS_MESSAGE = module.create_ros_message_msg__srv__arrange_pallet__request
+            cls._CONVERT_FROM_PY = module.convert_from_py_msg__srv__arrange_pallet__request
+            cls._CONVERT_TO_PY = module.convert_to_py_msg__srv__arrange_pallet__request
+            cls._TYPE_SUPPORT = module.type_support_msg__srv__arrange_pallet__request
+            cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__arrange_pallet__request
+
+    @classmethod
+    def __prepare__(cls, name, bases, **kwargs):
+        # list constant names here so that they appear in the help text of
+        # the message class under "Data and other attributes defined here:"
+        # as well as populate each message instance
+        return {
+        }
+
+
+class ArrangePallet_Request(metaclass=Metaclass_ArrangePallet_Request):
+    """Message class 'ArrangePallet_Request'."""
+
+    __slots__ = [
+        '_box_ids',
+        '_widths',
+        '_heights',
+        '_depths',
+        '_check_fields',
+    ]
+
+    _fields_and_field_types = {
+        'box_ids': 'sequence<uint32>',
+        'widths': 'sequence<float>',
+        'heights': 'sequence<float>',
+        'depths': 'sequence<float>',
+    }
+
+    # This attribute is used to store an rosidl_parser.definition variable
+    # related to the data type of each of the components the message.
+    SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('uint32')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+    )
+
+    def __init__(self, **kwargs):
+        if 'check_fields' in kwargs:
+            self._check_fields = kwargs['check_fields']
+        else:
+            self._check_fields = ros_python_check_fields == '1'
+        if self._check_fields:
+            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+                'Invalid arguments passed to constructor: %s' % \
+                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.box_ids = array.array('I', kwargs.get('box_ids', []))
+        self.widths = array.array('f', kwargs.get('widths', []))
+        self.heights = array.array('f', kwargs.get('heights', []))
+        self.depths = array.array('f', kwargs.get('depths', []))
+
+    def __repr__(self):
+        typename = self.__class__.__module__.split('.')
+        typename.pop()
+        typename.append(self.__class__.__name__)
+        args = []
+        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
+            field = getattr(self, s)
+            fieldstr = repr(field)
+            # We use Python array type for fields that can be directly stored
+            # in them, and "normal" sequences for everything else.  If it is
+            # a type that we store in an array, strip off the 'array' portion.
+            if (
+                isinstance(t, rosidl_parser.definition.AbstractSequence) and
+                isinstance(t.value_type, rosidl_parser.definition.BasicType) and
+                t.value_type.typename in ['float', 'double', 'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64']
+            ):
+                if len(field) == 0:
+                    fieldstr = '[]'
+                else:
+                    if self._check_fields:
+                        assert fieldstr.startswith('array(')
+                    prefix = "array('X', "
+                    suffix = ')'
+                    fieldstr = fieldstr[len(prefix):-len(suffix)]
+            args.append(s + '=' + fieldstr)
+        return '%s(%s)' % ('.'.join(typename), ', '.join(args))
+
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            return False
+        if self.box_ids != other.box_ids:
+            return False
+        if self.widths != other.widths:
+            return False
+        if self.heights != other.heights:
+            return False
+        if self.depths != other.depths:
+            return False
+        return True
+
+    @classmethod
+    def get_fields_and_field_types(cls):
+        from copy import copy
+        return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def box_ids(self):
+        """Message field 'box_ids'."""
+        return self._box_ids
+
+    @box_ids.setter
+    def box_ids(self, value):
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'I', \
+                    "The 'box_ids' array.array() must have the type code of 'I'"
+                self._box_ids = value
+                return
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, int) for v in value) and
+                 all(val >= 0 and val < 4294967296 for val in value)), \
+                "The 'box_ids' field must be a set or sequence and each value of type 'int' and each unsigned integer in [0, 4294967295]"
+        self._box_ids = array.array('I', value)
+
+    @builtins.property
+    def widths(self):
+        """Message field 'widths'."""
+        return self._widths
+
+    @widths.setter
+    def widths(self, value):
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'f', \
+                    "The 'widths' array.array() must have the type code of 'f'"
+                self._widths = value
+                return
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'widths' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._widths = array.array('f', value)
+
+    @builtins.property
+    def heights(self):
+        """Message field 'heights'."""
+        return self._heights
+
+    @heights.setter
+    def heights(self, value):
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'f', \
+                    "The 'heights' array.array() must have the type code of 'f'"
+                self._heights = value
+                return
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'heights' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._heights = array.array('f', value)
+
+    @builtins.property
+    def depths(self):
+        """Message field 'depths'."""
+        return self._depths
+
+    @depths.setter
+    def depths(self, value):
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'f', \
+                    "The 'depths' array.array() must have the type code of 'f'"
+                self._depths = value
+                return
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'depths' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._depths = array.array('f', value)
+
+
+# Import statements for member types
+
+# already imported above
+# import builtins
+
+# already imported above
+# import math
+
+# already imported above
+# import rosidl_parser.definition
+
+
+class Metaclass_ArrangePallet_Response(type):
+    """Metaclass of message 'ArrangePallet_Response'."""
+
+    _CREATE_ROS_MESSAGE = None
+    _CONVERT_FROM_PY = None
+    _CONVERT_TO_PY = None
+    _DESTROY_ROS_MESSAGE = None
+    _TYPE_SUPPORT = None
+
+    __constants = {
+    }
+
+    @classmethod
+    def __import_type_support__(cls):
+        try:
+            from rosidl_generator_py import import_type_support
+            module = import_type_support('vision_interfaces')
+        except ImportError:
+            import logging
+            import traceback
+            logger = logging.getLogger(
+                'vision_interfaces.srv.ArrangePallet_Response')
+            logger.debug(
+                'Failed to import needed modules for type support:\n' +
+                traceback.format_exc())
+        else:
+            cls._CREATE_ROS_MESSAGE = module.create_ros_message_msg__srv__arrange_pallet__response
+            cls._CONVERT_FROM_PY = module.convert_from_py_msg__srv__arrange_pallet__response
+            cls._CONVERT_TO_PY = module.convert_to_py_msg__srv__arrange_pallet__response
+            cls._TYPE_SUPPORT = module.type_support_msg__srv__arrange_pallet__response
+            cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__arrange_pallet__response
+
+    @classmethod
+    def __prepare__(cls, name, bases, **kwargs):
+        # list constant names here so that they appear in the help text of
+        # the message class under "Data and other attributes defined here:"
+        # as well as populate each message instance
+        return {
+        }
+
+
+class ArrangePallet_Response(metaclass=Metaclass_ArrangePallet_Response):
+    """Message class 'ArrangePallet_Response'."""
+
+    __slots__ = [
+        '_strategy',
+        '_layer_descriptions',
+        '_total_layers',
+        '_pallet_fill_percentage',
+        '_success',
+        '_check_fields',
+    ]
+
+    _fields_and_field_types = {
+        'strategy': 'string',
+        'layer_descriptions': 'sequence<string>',
+        'total_layers': 'uint32',
+        'pallet_fill_percentage': 'float',
+        'success': 'boolean',
+    }
+
+    # This attribute is used to store an rosidl_parser.definition variable
+    # related to the data type of each of the components the message.
+    SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+    )
+
+    def __init__(self, **kwargs):
+        if 'check_fields' in kwargs:
+            self._check_fields = kwargs['check_fields']
+        else:
+            self._check_fields = ros_python_check_fields == '1'
+        if self._check_fields:
+            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+                'Invalid arguments passed to constructor: %s' % \
+                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.strategy = kwargs.get('strategy', str())
+        self.layer_descriptions = kwargs.get('layer_descriptions', [])
+        self.total_layers = kwargs.get('total_layers', int())
+        self.pallet_fill_percentage = kwargs.get('pallet_fill_percentage', float())
+        self.success = kwargs.get('success', bool())
+
+    def __repr__(self):
+        typename = self.__class__.__module__.split('.')
+        typename.pop()
+        typename.append(self.__class__.__name__)
+        args = []
+        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
+            field = getattr(self, s)
+            fieldstr = repr(field)
+            # We use Python array type for fields that can be directly stored
+            # in them, and "normal" sequences for everything else.  If it is
+            # a type that we store in an array, strip off the 'array' portion.
+            if (
+                isinstance(t, rosidl_parser.definition.AbstractSequence) and
+                isinstance(t.value_type, rosidl_parser.definition.BasicType) and
+                t.value_type.typename in ['float', 'double', 'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64']
+            ):
+                if len(field) == 0:
+                    fieldstr = '[]'
+                else:
+                    if self._check_fields:
+                        assert fieldstr.startswith('array(')
+                    prefix = "array('X', "
+                    suffix = ')'
+                    fieldstr = fieldstr[len(prefix):-len(suffix)]
+            args.append(s + '=' + fieldstr)
+        return '%s(%s)' % ('.'.join(typename), ', '.join(args))
+
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            return False
+        if self.strategy != other.strategy:
+            return False
+        if self.layer_descriptions != other.layer_descriptions:
+            return False
+        if self.total_layers != other.total_layers:
+            return False
+        if self.pallet_fill_percentage != other.pallet_fill_percentage:
+            return False
+        if self.success != other.success:
+            return False
+        return True
+
+    @classmethod
+    def get_fields_and_field_types(cls):
+        from copy import copy
+        return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def strategy(self):
+        """Message field 'strategy'."""
+        return self._strategy
+
+    @strategy.setter
+    def strategy(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, str), \
+                "The 'strategy' field must be of type 'str'"
+        self._strategy = value
+
+    @builtins.property
+    def layer_descriptions(self):
+        """Message field 'layer_descriptions'."""
+        return self._layer_descriptions
+
+    @layer_descriptions.setter
+    def layer_descriptions(self, value):
+        if self._check_fields:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, str) for v in value) and
+                 True), \
+                "The 'layer_descriptions' field must be a set or sequence and each value of type 'str'"
+        self._layer_descriptions = value
+
+    @builtins.property
+    def total_layers(self):
+        """Message field 'total_layers'."""
+        return self._total_layers
+
+    @total_layers.setter
+    def total_layers(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'total_layers' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'total_layers' field must be an unsigned integer in [0, 4294967295]"
+        self._total_layers = value
+
+    @builtins.property
+    def pallet_fill_percentage(self):
+        """Message field 'pallet_fill_percentage'."""
+        return self._pallet_fill_percentage
+
+    @pallet_fill_percentage.setter
+    def pallet_fill_percentage(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'pallet_fill_percentage' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'pallet_fill_percentage' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._pallet_fill_percentage = value
+
+    @builtins.property
+    def success(self):
+        """Message field 'success'."""
+        return self._success
+
+    @success.setter
+    def success(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'success' field must be of type 'bool'"
+        self._success = value
+
+
+# Import statements for member types
+
+# already imported above
+# import builtins
+
+# already imported above
+# import rosidl_parser.definition
+
+
+class Metaclass_ArrangePallet_Event(type):
+    """Metaclass of message 'ArrangePallet_Event'."""
+
+    _CREATE_ROS_MESSAGE = None
+    _CONVERT_FROM_PY = None
+    _CONVERT_TO_PY = None
+    _DESTROY_ROS_MESSAGE = None
+    _TYPE_SUPPORT = None
+
+    __constants = {
+    }
+
+    @classmethod
+    def __import_type_support__(cls):
+        try:
+            from rosidl_generator_py import import_type_support
+            module = import_type_support('vision_interfaces')
+        except ImportError:
+            import logging
+            import traceback
+            logger = logging.getLogger(
+                'vision_interfaces.srv.ArrangePallet_Event')
+            logger.debug(
+                'Failed to import needed modules for type support:\n' +
+                traceback.format_exc())
+        else:
+            cls._CREATE_ROS_MESSAGE = module.create_ros_message_msg__srv__arrange_pallet__event
+            cls._CONVERT_FROM_PY = module.convert_from_py_msg__srv__arrange_pallet__event
+            cls._CONVERT_TO_PY = module.convert_to_py_msg__srv__arrange_pallet__event
+            cls._TYPE_SUPPORT = module.type_support_msg__srv__arrange_pallet__event
+            cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__arrange_pallet__event
+
+            from service_msgs.msg import ServiceEventInfo
+            if ServiceEventInfo.__class__._TYPE_SUPPORT is None:
+                ServiceEventInfo.__class__.__import_type_support__()
+
+    @classmethod
+    def __prepare__(cls, name, bases, **kwargs):
+        # list constant names here so that they appear in the help text of
+        # the message class under "Data and other attributes defined here:"
+        # as well as populate each message instance
+        return {
+        }
+
+
+class ArrangePallet_Event(metaclass=Metaclass_ArrangePallet_Event):
+    """Message class 'ArrangePallet_Event'."""
+
+    __slots__ = [
+        '_info',
+        '_request',
+        '_response',
+        '_check_fields',
+    ]
+
+    _fields_and_field_types = {
+        'info': 'service_msgs/ServiceEventInfo',
+        'request': 'sequence<vision_interfaces/ArrangePallet_Request, 1>',
+        'response': 'sequence<vision_interfaces/ArrangePallet_Response, 1>',
+    }
+
+    # This attribute is used to store an rosidl_parser.definition variable
+    # related to the data type of each of the components the message.
+    SLOT_TYPES = (
+        rosidl_parser.definition.NamespacedType(['service_msgs', 'msg'], 'ServiceEventInfo'),  # noqa: E501
+        rosidl_parser.definition.BoundedSequence(rosidl_parser.definition.NamespacedType(['vision_interfaces', 'srv'], 'ArrangePallet_Request'), 1),  # noqa: E501
+        rosidl_parser.definition.BoundedSequence(rosidl_parser.definition.NamespacedType(['vision_interfaces', 'srv'], 'ArrangePallet_Response'), 1),  # noqa: E501
+    )
+
+    def __init__(self, **kwargs):
+        if 'check_fields' in kwargs:
+            self._check_fields = kwargs['check_fields']
+        else:
+            self._check_fields = ros_python_check_fields == '1'
+        if self._check_fields:
+            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+                'Invalid arguments passed to constructor: %s' % \
+                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        from service_msgs.msg import ServiceEventInfo
+        self.info = kwargs.get('info', ServiceEventInfo())
+        self.request = kwargs.get('request', [])
+        self.response = kwargs.get('response', [])
+
+    def __repr__(self):
+        typename = self.__class__.__module__.split('.')
+        typename.pop()
+        typename.append(self.__class__.__name__)
+        args = []
+        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
+            field = getattr(self, s)
+            fieldstr = repr(field)
+            # We use Python array type for fields that can be directly stored
+            # in them, and "normal" sequences for everything else.  If it is
+            # a type that we store in an array, strip off the 'array' portion.
+            if (
+                isinstance(t, rosidl_parser.definition.AbstractSequence) and
+                isinstance(t.value_type, rosidl_parser.definition.BasicType) and
+                t.value_type.typename in ['float', 'double', 'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64']
+            ):
+                if len(field) == 0:
+                    fieldstr = '[]'
+                else:
+                    if self._check_fields:
+                        assert fieldstr.startswith('array(')
+                    prefix = "array('X', "
+                    suffix = ')'
+                    fieldstr = fieldstr[len(prefix):-len(suffix)]
+            args.append(s + '=' + fieldstr)
+        return '%s(%s)' % ('.'.join(typename), ', '.join(args))
+
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            return False
+        if self.info != other.info:
+            return False
+        if self.request != other.request:
+            return False
+        if self.response != other.response:
+            return False
+        return True
+
+    @classmethod
+    def get_fields_and_field_types(cls):
+        from copy import copy
+        return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def info(self):
+        """Message field 'info'."""
+        return self._info
+
+    @info.setter
+    def info(self, value):
+        if self._check_fields:
+            from service_msgs.msg import ServiceEventInfo
+            assert \
+                isinstance(value, ServiceEventInfo), \
+                "The 'info' field must be a sub message of type 'ServiceEventInfo'"
+        self._info = value
+
+    @builtins.property
+    def request(self):
+        """Message field 'request'."""
+        return self._request
+
+    @request.setter
+    def request(self, value):
+        if self._check_fields:
+            from vision_interfaces.srv import ArrangePallet_Request
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) <= 1 and
+                 all(isinstance(v, ArrangePallet_Request) for v in value) and
+                 True), \
+                "The 'request' field must be a set or sequence with length <= 1 and each value of type 'ArrangePallet_Request'"
+        self._request = value
+
+    @builtins.property
+    def response(self):
+        """Message field 'response'."""
+        return self._response
+
+    @response.setter
+    def response(self, value):
+        if self._check_fields:
+            from vision_interfaces.srv import ArrangePallet_Response
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) <= 1 and
+                 all(isinstance(v, ArrangePallet_Response) for v in value) and
+                 True), \
+                "The 'response' field must be a set or sequence with length <= 1 and each value of type 'ArrangePallet_Response'"
+        self._response = value
+
+
+class Metaclass_ArrangePallet(type):
+    """Metaclass of service 'ArrangePallet'."""
+
+    _TYPE_SUPPORT = None
+
+    @classmethod
+    def __import_type_support__(cls):
+        try:
+            from rosidl_generator_py import import_type_support
+            module = import_type_support('vision_interfaces')
+        except ImportError:
+            import logging
+            import traceback
+            logger = logging.getLogger(
+                'vision_interfaces.srv.ArrangePallet')
+            logger.debug(
+                'Failed to import needed modules for type support:\n' +
+                traceback.format_exc())
+        else:
+            cls._TYPE_SUPPORT = module.type_support_srv__srv__arrange_pallet
+
+            from vision_interfaces.srv import _arrange_pallet
+            if _arrange_pallet.Metaclass_ArrangePallet_Request._TYPE_SUPPORT is None:
+                _arrange_pallet.Metaclass_ArrangePallet_Request.__import_type_support__()
+            if _arrange_pallet.Metaclass_ArrangePallet_Response._TYPE_SUPPORT is None:
+                _arrange_pallet.Metaclass_ArrangePallet_Response.__import_type_support__()
+            if _arrange_pallet.Metaclass_ArrangePallet_Event._TYPE_SUPPORT is None:
+                _arrange_pallet.Metaclass_ArrangePallet_Event.__import_type_support__()
+
+
+class ArrangePallet(metaclass=Metaclass_ArrangePallet):
+    from vision_interfaces.srv._arrange_pallet import ArrangePallet_Request as Request
+    from vision_interfaces.srv._arrange_pallet import ArrangePallet_Response as Response
+    from vision_interfaces.srv._arrange_pallet import ArrangePallet_Event as Event
+
+    def __init__(self):
+        raise NotImplementedError('Service classes can not be instantiated')

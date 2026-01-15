@@ -1,0 +1,7 @@
+sensor_msgs/Image image
+---
+uint32[] box_ids
+float32[] widths
+float32[] heights
+float32[] depths
+bool success
